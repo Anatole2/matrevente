@@ -49,7 +49,7 @@ function updateProductList(produits) {
         // Créer le HTML pour chaque produit et l'ajouter au DOM
         const produitHTML = `
             <button type="submit" class="lien-bouton" id="Id_Produit" name="Id_Produit" value="${produit.id}">
-                <img src='../../image/${produit.image.Id_Image}_${produit.image.libelle}.png' alt="Image de l'objet">
+                <img src='/matrevente/image/${produit.image.Id_Image}_${produit.image.libelle}.png' alt="Image de l'objet">
                 <h3>${produit.titre}</h3>
                 <p>${produit.description}</p>
                 <p>${produit.prix}$</p>
@@ -111,7 +111,7 @@ function searchSuggestions() {
                     button.value = produit.Id_Produit;
 
                     var image = document.createElement('img');
-                    image.src = '../../image/' + produit.Id_Image + "_" + produit.libelle + ".png";
+                    image.src = '/matrevente/image/' + produit.Id_Image + "_" + produit.libelle + ".png";
                     image.alt = "Image de l'objet";
 
                     var title = document.createElement('h3');
@@ -152,7 +152,7 @@ function searchSuggestions() {
                     button.value = produit.Id_Produit;
 
                     var image = document.createElement('img');
-                    image.src = '../../image/' + produit.Id_Image + "_" + produit.libelle + ".png";
+                    image.src = '/matrevente/image/' + produit.Id_Image + "_" + produit.libelle + ".png";
                     image.alt = "Image de l'objet";
 
                     var title = document.createElement('h3');

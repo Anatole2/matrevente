@@ -30,9 +30,9 @@ require "configuration.php";
     </div>
     <div class="row">
         <div class="bloc">
-            <!--<a href="modePaiementClient.php">--><img src="image/imagePageProfilClient/modePaiementClient.png" alt="Image 3"></a>
+            <a href="modePaiementClient.php"><img src="image/imagePageProfilClient/modePaiementClient.png" alt="Image 3"></a>
             <div class="text-container">
-                <!-- <a href="modePaiementClient.php"--><h3>Mes paiements</h3></a>
+                <a href="modePaiementClient.php"><h3>Mes paiements</h3></a>
                 <p>Gerer les modes de paiement.</p>
             </div>
         </div>

@@ -91,8 +91,8 @@ $accesCompte=$autorisation->autoriserAccesCompte();
         ?> 
             <a href='/connexion.php'><button class="menu-item">Se connecter</button></a><?php //Sinon afficher bouton SE CONNECTER
         }?>
-        <a class="menu-item" href="/ajouterProduit.php">Publier une annonce</a>
-        <a class="menu-item" href="/mission.php">Mission du site</a>
+        <a class="menu-item" href="ajouterProduit.php">Publier une annonce</a>
+        <a class="menu-item" href="mission.php">Mission du site</a>
         <button class="menu-item">Rechercher</button>
     </section>
 </header>

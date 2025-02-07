@@ -7,7 +7,7 @@
         switch ($lien) {
             case "Accueil":
                 ?>
-                <link rel="stylesheet" href="../css/accueil.css">                        
+                <link rel="stylesheet" href="../css/accueil.css">              
                   <script defer src="js/accueil.js"></script><?php
                 break;
             case "AjoutProduit" :
@@ -75,6 +75,9 @@
         case "InformationsUtilisateur" :
             ?><link rel="stylesheet" href="css/informationUtilisateur.css">
             <script defer src="js/informationUtilisateur.js"></script><?php
+            break;
+        case "modePaiementClient" :
+            ?><link rel="stylesheet" href="css/modePaiementClient.css"><?php
             break;
         default:
             # code...
