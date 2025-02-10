@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Ribeye';
+    src: url('font/Ribeye-Regular.ttf');
+}
+@font-face {
+    font-family: 'Reem-kufi-ink';
+    src: url('font/ReemKufiInk-Regular.ttf');
+}
+
+
+
+main {
+    display: flex;
+}
+
+aside {
+    padding : 20px;
+    width: 20%;
+    margin-right: 20px;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    height:100vh;
+}
+#titre{
+    padding:20px;
+    text-align: center;
+    font-family: 'Reem-kufi-ink';
+}
+
+.section-droite{
+    padding : 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.modePaiement {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espace entre les items */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #5cb5a5;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.item img {
+    width: 150px; /* Augmentation de la taille */
+    height: 150px;
+    border-radius: 5px;
+}
+
+.item-details {
+    font-size: 18px; /* Texte plus grand */
+    color: #333;
+    font-family: 'Reem-kufi-ink';
+}
+
+.bouton-changer-paiement {
+    display: block;
+    margin: 20px auto; /* Centre le bouton */
+    padding: 15px 30px;
+    font-family: 'Reem-kufi-ink';
+    background-color: #FBCA04; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bouton-changer-paiement:hover {
+    background-color: #E0B203; /* Légère variation au survol */
+}
+
+
+/* Responsive design (exemple) */
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column-reverse;/* Mettre les liens en bas des items en vente et non au dessus en responsive */
+    }
+    .item {
+        width: 100%;
+    }
+    aside{
+        width: auto;
+        height:auto;
+    }
+    div{
+        width: auto;
+    }
+    
+    #titre{
+        text-align: center;
+    }
+    .section-droite{
+        width: auto;
+    }
+    .formListeProduitsParUtilisateur{
+        width: auto;
+    }
+}
